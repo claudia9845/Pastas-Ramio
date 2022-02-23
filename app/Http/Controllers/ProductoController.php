@@ -32,7 +32,7 @@ class ProductoController extends Controller
     public function indexData(){
         $producto=Producto::all();
         
-        return ['Producto'=>$producto];
+        return ['producto'=>$producto];
     }
 public function update(Request $request){
         $producto= Producto::findOrFail($request->id);

@@ -42,13 +42,12 @@ public function update(Request $request){
         $tipoPasta= TipoPasta::findOrFail($request->id);
         $tipoPasta->delete();
     }
-    public function getCategoria(Request $request){
-        
-        
-$tipoPasta= TipoPasta::select('id','nombre')
+    
+    public function gettipopasta(Request $request){
+        $tipoPasta= TipoPasta::select('id','nombre')
         ->get();
         return [
-            'Pasta'=>$tipoPasta
+            'pasta'=>$tipoPasta
         ];
     }
 }

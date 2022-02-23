@@ -25,6 +25,9 @@
                                    <jet-nav-link :href="route('tipopasta')" :active="route().current('tipopasta')">
                                     Tipo pasta
                                 </jet-nav-link>
+                                <jet-nav-link :href="route('producto')" :active="route().current('producto')">
+                                    Producto
+                                </jet-nav-link>
                             </div>
                         </div>
 
